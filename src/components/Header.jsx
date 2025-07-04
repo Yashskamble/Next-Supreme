@@ -62,7 +62,7 @@ const Header = () => {
     //   );
 
     return (
-        <>
+        <header>
         <nav className="bg-[#F9FBFF] h-[80px] py-5 flex justify-between px-6 md:px-35 shadow-[0_0_94px_rgba(0,0,0,0.2)]">
             <Image src={GroupImg} height={41} alt="Supreme_Group_Img" width={146} />
             <button
@@ -97,7 +97,7 @@ const Header = () => {
                 <div className="py-2.5"><Image src={LanguagImg} height={22} width={52} alt="Language_Image" /></div>
             </div>
         )}
-        </>
+        </header>
     )
 };
 

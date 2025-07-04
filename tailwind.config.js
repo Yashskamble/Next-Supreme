@@ -5,7 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        manrope: ["var(--font-manrope)", "sans-serif"],
+        sans: ['Inter', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
