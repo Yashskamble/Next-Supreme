@@ -1,9 +1,6 @@
 'use client'
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import GroupImg from '../assets/Group.png';
-import LinkedInImg from '../assets/bxl-linkedin.svg.png';
-import LanguagImg from '../assets/Frame 493.png';
 import Link from "next/link";
 
 const Header = () => {
@@ -37,7 +34,7 @@ const Header = () => {
       }`}
     >
       <nav className="bg-[#F9FBFF] h-[80px] py-5 flex justify-between px-6 md:px-35 shadow-[0_0_94px_rgba(0,0,0,0.2)]">
-        <Image src={GroupImg} height={41} alt="Supreme_Group_Img" width={146} />
+        <Image src='/assets/Group.png' height={41} alt="Supreme_Group_Img" width={146} />
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-blue-400"
@@ -51,11 +48,11 @@ const Header = () => {
           <button className="bg-[#5CD6FF] rounded-4xl text-black border-[#00BFFF] border-[1px] w-[145px]">
             Contact us
           </button>
-          <Link href="https://www.linkedin.com/companyup-company/">
-            <Image src={LinkedInImg} alt="LinkedIn_Img" height={24} width={24} />
+          <Link href="https://www.linkedin.com/companyup-company/" className="py-2.5">
+            <Image src='/assets/linkedIn.png'  alt="LinkedIn_Img" height={24} width={24} />
           </Link>
           <div className="py-2.5">
-            <Image src={LanguagImg} height={22} width={52} alt="Language_Image" />
+            <Image src='/assets/Language.png'  height={22} width={52} alt="Language_Image" />
           </div>
         </div>
       </nav>
@@ -65,10 +62,10 @@ const Header = () => {
           <button className="bg-[#5CD6FF] rounded-4xl text-black border-[#00BFFF] border-[1px] w-[145px]">
             Contact us
           </button>
-          <Link href="https://www.linkedin.com/company/supreme-group-company">  <Image src={LinkedInImg} alt="LinkedIn_Img" height={24} width={24} />
+          <Link href="https://www.linkedin.com/company/supreme-group-company">  <Image src='/assets/linkedIn.png' alt="LinkedIn_Img" height={24} width={24} />
           </Link>
           <div className="py-2.5">
-            <Image src={LanguagImg} height={22} width={52} alt="Language_Image" />
+            <Image src='/assets/Language.png' height={22} width={52} alt="Language_Image" />
           </div>
         </div>
       )}

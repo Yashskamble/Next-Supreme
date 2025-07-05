@@ -21,7 +21,7 @@ function FooterLinks({footerLinks}) {
 
                 {item.link.map((linkItem, i) => {
                     return (
-                        <Link key={i} href={handleRedirect(item, linkItem)} target={linkItem === "LinkedIn" && '_blank'} className='text-[14px] font-medium w-max cursor-pointer'>{linkItem}</Link>
+                        <Link key={i} href={handleRedirect(item, linkItem)} target={linkItem === "LinkedIn" ? '_blank' : undefined} className='text-[14px] font-medium w-max cursor-pointer'>{linkItem}</Link>
                     )
                 })}
 
