@@ -1,14 +1,13 @@
-import ContactForm from "@/components/ContactForm";
-import HeroSlide from "@/components/HeroSlide";
-import PerformanceHero from "@/components/PerformanceHero";
-import Image from "next/image";
+import ContactForm from "@/components/Form/ContactForm";
+import HeroSlide from "@/components/VideoSection/HeroSlide";
+import PerformanceHero from "@/components/MainComponent/PerformanceHero";
 
 export default function Home() {
   return (
     <>
-    <PerformanceHero/>
-    <HeroSlide/>
-    <ContactForm/>
+      <PerformanceHero />
+      <HeroSlide />
+      <ContactForm />
     </>
   );
 }
